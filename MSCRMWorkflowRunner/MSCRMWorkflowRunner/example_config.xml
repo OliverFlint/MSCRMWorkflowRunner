@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<connectionstring>Url=http://win-j574fskvvv3/OrgName; Domain=BRE; Username=Administrator; Password=Password1;</connectionstring>
+	<workflow name="Send Contact Birthday Email" id="" />
+	<fetchxml>
+		<![CDATA[
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="contact">
+    <attribute name="contactid" />
+  </entity>
+</fetch>
+		]]>
+	</fetchxml>
+</config>
