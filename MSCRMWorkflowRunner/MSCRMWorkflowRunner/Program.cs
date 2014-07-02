@@ -12,6 +12,9 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace MSCRMWorkflowRunner
 {
+    /// <summary>
+    /// This code is supplied as is without guarantee. The latest code can be download from https://mscrmworkflowrunner.codeplex.com/
+    /// </summary>
     class Program
     {
         private static string logfilename;
@@ -22,6 +25,7 @@ namespace MSCRMWorkflowRunner
             {
                 logfilename = string.Format("{0}.log", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name);
                 log("BEGIN");
+                log("This code is supplied as is without guarantee. The latest code can be download from https://mscrmworkflowrunner.codeplex.com/");
                 if (args.Count() != 1)
                 {
                     throw new Exception("Invalid argument: config xml file.");
