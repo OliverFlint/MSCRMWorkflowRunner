@@ -12,21 +12,21 @@ This configuration consists of 3 elements:
 * A fetchxml query
 
 **Sample Config**
-
-    <config>
-    	<connectionstring>Url=http://hostname/OrgName; Domain=mydomain; Username=Administrator; Password=Password1;</connectionstring>
-    	<workflow name="Send Contact Birthday Email" id="" />
-    	<fetchxml>
-    		<![CDATA[
-        <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
-          <entity name="contact">
-            <attribute name="contactid" />
-          </entity>
-        </fetch>
-    		]]>
-    	</fetchxml>
-    </config>
-
+```xml
+<config>
+  <connectionstring>Url=http://hostname/OrgName; Domain=mydomain; Username=Administrator; Password=Password1;</connectionstring>
+  <workflow name="Send Contact Birthday Email" id="" />
+  <fetchxml>
+    <![CDATA[
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="contact">
+        <attribute name="contactid" />
+      </entity>
+    </fetch>
+    ]]>
+  </fetchxml>
+</config>
+```
 **The connection string**
 The connection string is a standard mscrm connection string. Details of these can be found here http://msdn.microsoft.com/en-gb/library/gg695810.aspx
 
