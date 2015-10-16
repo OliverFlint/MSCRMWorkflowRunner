@@ -13,7 +13,7 @@ This configuration consists of 3 elements:
 
 **Sample Config**
 
-```xml
+```
 <config>
   <connectionstring>Url=http://hostname/OrgName; Domain=mydomain; Username=Administrator; Password=Password1;</connectionstring>
   <workflow name="Send Contact Birthday Email" id="" />
