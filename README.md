@@ -12,6 +12,7 @@ This configuration consists of 3 elements:
 * A fetchxml query
 
 **Sample Config**
+
 ```xml
 <config>
   <connectionstring>Url=http://hostname/OrgName; Domain=mydomain; Username=Administrator; Password=Password1;</connectionstring>
@@ -27,6 +28,7 @@ This configuration consists of 3 elements:
   </fetchxml>
 </config>
 ```
+
 **The connection string**
 The connection string is a standard mscrm connection string. Details of these can be found here http://msdn.microsoft.com/en-gb/library/gg695810.aspx
 
